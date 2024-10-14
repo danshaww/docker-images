@@ -2,6 +2,8 @@ name: Epichouse Homepage Build & Deployment
 run-name: ${{ gitea.actor }} is testing out Gitea Actions 🚀
 on:
   push:
+    paths-ignore:
+      - '**/README.md'
 jobs:
   dev-deployment:
     runs-on: act2
