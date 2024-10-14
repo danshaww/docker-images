@@ -1,0 +1,43 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/bookmarks
+
+- Third Party Services and Tools:
+    - Microsoft To Do:
+        - abbr: 
+          href: https://portal.azure.com/
+          icon: azure.png
+    - Azure DevOps:
+        - abbr: 
+          href: https://dev.azure.com/EpichouseCloud/EpicProject/_build
+          icon: azure-devops.png
+    - Cloudflare:
+        - abbr: 
+          href: https://dash.cloudflare.com/90d66f15b080eee95b3ea1fae786118e/epichouse.co.uk
+          icon: cloudflare.png
+    - BackBlaze:
+        - abbr:   
+          href: https://secure.backblaze.com/b2_buckets.htm?bznetid=12066201361702750791444
+          icon: backblaze.png
+    - SendGrid:
+        - abbr: 
+          href: https://sendgrid.com/
+          icon: /images/sendgrid.png
+    - SMTP2GO:
+        - abbr: 
+          href: https://app.smtp2go.com/
+          icon: /images/smtp2go.png
+
+- Productivity Tools:
+    - Notion:
+        - abbr: 
+          href: https://www.notion.so/
+          icon: notion.png
+    - Microsoft 365:
+        - abbr: 
+          href: https://microsoft365.com/
+          icon: /images/m365.png
+    - Microsoft OneDrive:
+        - abbr: 
+          href: https://onedrive.live.com/
+          icon: /images/onedrive.png

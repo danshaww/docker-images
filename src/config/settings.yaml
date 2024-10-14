@@ -1,0 +1,40 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/settings
+
+title: Epichouse Homelab
+background: 
+  image: /images/background.jpg
+  blur: sm
+  brightness: 10
+  opacity: 40
+#  saturate: 50
+
+headerStyle: clean
+
+quicklaunch:
+  searchDescriptions: true
+  hideInternetSearch: true
+  showSearchSuggestions: true
+  hideVisitURL: true
+
+
+
+
+layout:
+  HomeLab Infrastructure:
+    style: row
+    columns: 4
+  Self Hosted Services:
+    style: row
+    columns: 4
+
+useEqualHeights: true
+disableCollapse: true
+theme: dark
+color: slate
+#
+#providers:
+#  openweathermap: openweathermapapikey
+#  weatherapi: weatherapiapikey
+
