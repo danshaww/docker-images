@@ -2,6 +2,90 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/latest/configs/bookmarks
 
+- Manchester Infrastructure:
+    - Proxmox:
+        href: https://srv-pve-mcr-prod-01.internal.epichouse.co.uk:8006/
+        description: srv-pve-mcr-prod-01
+        icon: proxmox.png
+    - Proxmox Backup Server:
+        href: https://vm-pbs-mcr-prod-01.internal.epichouse.co.uk:8007/
+        description: vm-pbs-mcr-prod-01
+        icon: proxmox.png
+    - Unifi Controller:
+        href: https://unifi.prod.epichouse.co.uk/
+        description: Unifi Network Management
+        icon: unifi.png
+    - Traefik:
+        href: https://traefik-mcr.prod.epichouse.co.uk/
+        description: Reverse Proxy
+        icon: traefik.png
+
+- London Infrastructure:
+    - Proxmox:
+        href: https://srv-pve-prod-01.internal.epichouse.co.uk:8006/
+        description: srv-pve-prod-01
+        icon: proxmox.png
+    - Proxmox Backup Server:
+        href: https://vm-pbs-prod-01.internal.epichouse.co.uk:8007/
+        description: srv-pbs-prod-01
+        icon: proxmox.png
+    - OPNSense:
+        href: https://vm-gw-prod-01.internal.epichouse.co.uk/
+        description: vm-gw-prod-01
+        icon: opnsense.png
+    - Uptime Kuma:
+        href: https://uptimekuma.prod.epichouse.co.uk/
+        description: Primary Monitoring Server
+        icon: uptime-kuma.png
+
+    - Traefik (Production):
+        href: https://traefik.prod.epichouse.co.uk/
+        description: Reverse Proxy
+        icon: traefik.png
+    - Traefik (Test):
+        href: https://traefik.test.epichouse.co.uk/
+        description: Reverse Proxy
+        icon: traefik.png
+
+- Services:
+    - BookStack:
+        href: https://docs.prod.epichouse.co.uk/
+        description:  Wiki
+        icon: bookstack.png
+    - PassBolt:
+        href: https://passbolt.prod.epichouse.co.uk/
+        description:  Password Management Tool
+        icon: passbolt.png
+    - Gitea:
+        href: https://gitea.prod.epichouse.co.uk/
+        description:  GIT Server
+        icon: gitea.png
+    - Guacamole:
+        href: https://rdp.epichouse.co.uk/
+        description: Web Based RDP/SSH Client
+        icon: guacamole.png
+    - Plex:
+        href: https://plex.prod.epichouse.co.uk/
+        description: Plex Media Server
+        icon: plex.png
+    - qBittorrent:
+        href: https://qbittorrent.prod.epichouse.co.uk/
+        description: Torrent Client
+        icon: qbittorrent.png
+    - Files Web Service:
+        href: https://files.prod.epichouse.co.uk/
+        description: HTTP(S) File Download Web Service
+        icon: /images/www.png
+    - Web File Browser:
+        href: https://filebrowser.epichouse.co.uk/
+        description: HTTP(S) File Browser
+        icon: filebrowser.png
+    - Epichouse Website:
+        href: https://epichouse.co.uk/
+        description: Public Epichouse Website
+        icon: /images/www.png
+
+
 - Third Party Services and Tools:
     - Azure DevOps:
         - abbr: 
