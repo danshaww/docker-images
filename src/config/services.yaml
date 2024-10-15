@@ -9,7 +9,7 @@
         icon: proxmox.png
     - Proxmox Backup Server:
         href: https://vm-pbs-mcr-prod-01.internal.epichouse.co.uk:8007/
-        description: srv-pve-prod-01
+        description: vm-pbs-mcr-prod-01
         icon: proxmox.png
     - Unifi Controller:
         href: https://unifi.prod.epichouse.co.uk/
@@ -21,18 +21,18 @@
         icon: traefik.png
 
 - London Infrastructure:
-    - Proxmox (R340):
+    - Proxmox:
         href: https://srv-pve-prod-01.internal.epichouse.co.uk:8006/
         description: srv-pve-prod-01
         icon: proxmox.png
-    - TrueNAS Scale (NAS):
-        href: https://vm-nas-prod-01.internal.epichouse.co.uk/
-        description: vm-nas-prod-01
-        icon: truenas.png
-    - TrueNAS Scale (R240):
-        href: https://srv-backup-prod.internal.epichouse.co.uk/
-        description: srv-backup-prod
-        icon: truenas.png
+    - Proxmox Backup Server:
+        href: https://vm-pbs-prod-01.internal.epichouse.co.uk:8007/
+        description: srv-pbs-prod-01
+        icon: proxmox.png
+    - OPNSense:
+        href: https://vm-gw-prod-01.internal.epichouse.co.uk/
+        description: vm-gw-prod-01
+        icon: opnsense.png
     - Uptime Kuma:
         href: https://uptimekuma.prod.epichouse.co.uk/
         description: Primary Monitoring Server
