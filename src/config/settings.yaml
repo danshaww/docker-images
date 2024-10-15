@@ -29,8 +29,9 @@ layout:
   Services:
     style: column
 
+groupsInitiallyCollapsed: true
 useEqualHeights: true
-disableCollapse: true
+#disableCollapse: true
 theme: dark
 color: black
 #
