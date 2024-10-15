@@ -23,12 +23,14 @@ quicklaunch:
 
 layout:
   Manchester Infrastructure:
-    style: column
+    style: row
+    columns: 3
   London Infrastructure:
-    style: column
+    style: row
+    columns: 3  
   Services:
-    style: column
-
+    style: row
+    columns: 3
 groupsInitiallyCollapsed: true
 useEqualHeights: true
 #disableCollapse: true
