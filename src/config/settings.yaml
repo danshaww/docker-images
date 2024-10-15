@@ -10,13 +10,13 @@ title: Homepage
 #  opacity: 40
 #  saturate: 50
 
-headerStyle: clean
+headerStyle: boxed
 
 quicklaunch:
   searchDescriptions: true
-  hideInternetSearch: true
+#  hideInternetSearch: true
   showSearchSuggestions: true
-  hideVisitURL: true
+#  hideVisitURL: true
 
 
 
