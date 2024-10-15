@@ -11,7 +11,7 @@ appConfig:
 # Main content - An array of sections, each containing an array of items
 sections:
 - name: Productivity
-  icon: fas fa-rocket
+  icon: fas fa-keyboard
   items:
   - title: ToDoist
     description: Task Management
@@ -50,7 +50,7 @@ sections:
     target: newtab
 
 - name: Entertainment
-  icon: fas fa-rocket
+  icon: fas fa-tv
   items:
   - title: Youtube
     description: Youtube
@@ -66,4 +66,18 @@ sections:
     description: Plex
     icon: hl-plex
     url: https://plex.prod.epichouse.co.uk/
+    target: newtab
+
+- name: Cloud Services
+  icon: fas fa-cloud
+  items:
+  - title: Azure Portal
+    description: Azure Portal
+    icon: hl-azure
+    url: https://portal.azure.com/
+    target: newtab
+  - title: Azure DevOps
+    description: Azure DevOps
+    icon: hl-azure-devops
+    url: https://dev.azure.com/EpichouseCloud/DS/_build
     target: newtab
