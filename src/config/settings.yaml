@@ -27,11 +27,11 @@ layout:
   London Infrastructure:
     style: row
   Self Hosted Services:
-    style: row
+    style: column
   Third Party Services and Tools:
-    style: row
+    style: column
   Productivity Tools:
-    style: row
+    style: column
 #groupsInitiallyCollapsed: true
 useEqualHeights: true
 disableCollapse: true
