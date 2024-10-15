@@ -37,9 +37,9 @@ layout:
   Productivity Tools:
     style: row
     columns: 3
-groupsInitiallyCollapsed: true
+#groupsInitiallyCollapsed: true
 useEqualHeights: true
-#disableCollapse: true
+disableCollapse: true
 theme: dark
 color: neutral
 #

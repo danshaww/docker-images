@@ -3,10 +3,6 @@
 # https://gethomepage.dev/latest/configs/bookmarks
 
 - Third Party Services and Tools:
-    - Microsoft To Do:
-        - abbr: 
-          href: https://portal.azure.com/
-          icon: azure.png
     - Azure DevOps:
         - abbr: 
           href: https://dev.azure.com/EpichouseCloud/EpicProject/_build
@@ -41,3 +37,8 @@
         - abbr: 
           href: https://onedrive.live.com/
           icon: /images/onedrive.png
+    - Todoist:
+        - abbr:
+          href: https://app.todoist.com/
+          icon: todoist.png
+          description: The front page of the internet
