@@ -26,14 +26,10 @@ layout:
     style: column
   Third Party Services and Tools:
     style: column
-  Productivity Tools:
-    style: column
   London Infrastructure:
-    style: row
-    columns: 3
+    style: column
   Manchester Infrastructure:
-    style: row
-    columns: 3
+    style: column
 
 #groupsInitiallyCollapsed: true
 useEqualHeights: true

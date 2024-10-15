@@ -23,6 +23,16 @@
           href: https://traefik-mcr.prod.epichouse.co.uk/
           description: Reverse Proxy
           icon: traefik.png
+    - Bind DNS (Ansible):
+        - abbr: 
+          href: https://gitea.prod.epichouse.co.uk/dan/serverconfiguration/src/branch/main/roles/dns-servers/
+          description: Internal DNS Server
+          icon: ubuntu.png
+    - Docker (Ansible):
+        - abbr: 
+          href: https://gitea.prod.epichouse.co.uk/dan/serverconfiguration/src/branch/main/roles/vm-app-mcr-prod-01/
+          description: Production Manchester Docker Host
+          icon: ubuntu.png
 
 - London Infrastructure:
     - Proxmox:
@@ -55,10 +65,30 @@
           href: https://traefik.test.epichouse.co.uk/
           description: Reverse Proxy
           icon: traefik.png
-    - Bind DNS:
-        - abbr: vm-dns-prod-01 (Ansible)
+    - Bind DNS (Ansible):
+        - abbr: 
           href: https://gitea.prod.epichouse.co.uk/dan/serverconfiguration/src/branch/main/roles/dns-servers/
           description: Internal DNS Server
+          icon: ubuntu.png
+    - Docker (Ansible):
+        - abbr: 
+          href: https://gitea.prod.epichouse.co.uk/dan/serverconfiguration/src/branch/main/roles/vm-app-prod-01/
+          description: Production Docker Host
+          icon: ubuntu.png
+    - Docker (Ansible):
+        - abbr: 
+          href: https://gitea.prod.epichouse.co.uk/dan/serverconfiguration/src/branch/main/roles/vm-app-test-01/
+          description: Production Docker Host
+          icon: ubuntu.png
+    - Docker (Ansible):
+        - abbr: 
+          href: https://gitea.prod.epichouse.co.uk/dan/serverconfiguration/src/branch/main/roles/vm-upk-prod-01/
+          description: Uptime Kuma Docker Host
+          icon: ubuntu.png
+    - Docker (Ansible):
+        - abbr: 
+          href: https://gitea.prod.epichouse.co.uk/dan/serverconfiguration/src/branch/main/roles/vm-glg-prod-01/
+          description: Graylog Docker Host
           icon: ubuntu.png
 
 - Self Hosted Services:
@@ -110,6 +140,22 @@
 
 
 - Third Party Services and Tools:
+    - Notion:
+        - abbr: 
+          href: https://www.notion.so/
+          icon: notion.png
+    - Microsoft 365:
+        - abbr: 
+          href: https://microsoft365.com/
+          icon: /images/m365.png
+    - Microsoft OneDrive:
+        - abbr: 
+          href: https://onedrive.live.com/
+          icon: /images/onedrive.png
+    - Todoist:
+        - abbr:
+          href: https://app.todoist.com/
+          icon: todoist.png
     - Azure DevOps:
         - abbr: 
           href: https://dev.azure.com/EpichouseCloud/EpicProject/_build
@@ -131,21 +177,3 @@
           href: https://app.smtp2go.com/
           icon: /images/smtp2go.png
 
-- Productivity Tools:
-    - Notion:
-        - abbr: 
-          href: https://www.notion.so/
-          icon: notion.png
-    - Microsoft 365:
-        - abbr: 
-          href: https://microsoft365.com/
-          icon: /images/m365.png
-    - Microsoft OneDrive:
-        - abbr: 
-          href: https://onedrive.live.com/
-          icon: /images/onedrive.png
-    - Todoist:
-        - abbr:
-          href: https://app.todoist.com/
-          icon: todoist.png
-          description: The front page of the internet
