@@ -8,7 +8,7 @@ background:
   blur: sm
   brightness: 10
   opacity: 40
-  saturate: 50
+#  saturate: 50
 
 headerStyle: clean
 
@@ -24,8 +24,10 @@ quicklaunch:
 layout:
   Manchester Infrastructure:
     style: row
+    columns: 2
   London Infrastructure:
     style: row
+    columns: 2
   Self Hosted Services:
     style: column
   Third Party Services and Tools:
