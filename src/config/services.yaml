@@ -2,7 +2,19 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/latest/configs/services
 
-- HomeLab Infrastructure:
+- Manchester Infrastructure:
+    - Proxmox:
+        href: https://srv-pve-mcr-prod-01.internal.epichouse.co.uk:8006/
+        description: srv-pve-mcr-prod-01
+        icon: proxmox.png
+        siteMonitor: https://srv-pve-prod-01.internal.epichouse.co.uk:8006/
+    - Proxmox Backup Server:
+        href: https://vm-pbs-mcr-prod-01.internal.epichouse.co.uk:8007/
+        description: srv-pve-prod-01
+        icon: proxmox.png
+        siteMonitor: https://vm-pbs-mcr-prod-01.internal.epichouse.co.uk:8007/
+
+- London Infrastructure:
     - Proxmox (R340):
         href: https://srv-pve-prod-01.internal.epichouse.co.uk:8006/
         description: srv-pve-prod-01
