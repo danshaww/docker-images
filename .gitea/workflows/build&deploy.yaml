@@ -1,0 +1,44 @@
+name: Epichouse Homepage Build & Deployment
+run-name: ${{ gitea.actor }} is testing out Gitea Actions 🚀
+on:
+  push:
+    paths-ignore:
+      - '**/README.md'
+jobs:
+  dev:
+    runs-on: act2
+    if: github.ref == 'refs/heads/dev'
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Build Docker Image
+        run: docker image build . -t danshaw509/epichouse.dashy:${{ gitea.sha }}
+      - name: Login to DockerHub
+        run: docker login -u danshaw509 -p ${{ secrets.DOCKERTOKEN }}
+      - name: Push Docker Image with Commit Tag
+        run: docker push danshaw509/epichouse.dashy:${{ gitea.sha }}
+      - name: Create Development Docker Image
+        run: docker tag danshaw509/epichouse.dashy:${{ gitea.sha }} danshaw509/epichouse.dashy:development
+      - name: Push Docker Image with Development Tag
+        run: docker push danshaw509/epichouse.dashy:development
+      - name: Deploy Image
+        run: ssh  -o "StrictHostKeyChecking no" dan@vm-app-test-01 "cd /srv/docker/apps/dashy && docker compose down && docker compose pull && docker compose up -d"
+
+  prod:
+    runs-on: act2
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Build Docker Image
+        run: docker image build . -t danshaw509/epichouse.dashy:${{ gitea.sha }}
+      - name: Login to DockerHub
+        run: docker login -u danshaw509 -p ${{ secrets.DOCKERTOKEN }}
+      - name: Push Docker Image with Commit Tag
+        run: docker push danshaw509/epichouse.dashy:${{ gitea.sha }}
+      - name: Create Production Docker Image
+        run: docker tag danshaw509/epichouse.dashy:${{ gitea.sha }} danshaw509/epichouse.dashy:latest
+      - name: Push Docker Image with Production Tag
+        run: docker push danshaw509/epichouse.dashy:latest
+      - name: Deploy Image
+        run: ssh  -o "StrictHostKeyChecking no" dan@vm-app-prod-01 "cd /srv/docker/apps/dashy && docker compose down && docker compose pull && docker compose up -d"

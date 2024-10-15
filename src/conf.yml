@@ -1,0 +1,51 @@
+---
+# Page meta info, like heading, footer text and nav links
+pageInfo:
+  title: Dashy
+  description: Welcome to your new dashboard!
+
+# Optional app settings and configuration
+appConfig:
+  theme: colorful
+  webSearch: { disableWebSearch: true }
+# Main content - An array of sections, each containing an array of items
+sections:
+- name: Productivity
+  icon: fas fa-rocket
+  items:
+  - title: ToDoist
+    description: Task Management
+    icon: hl-todoist
+    url: https://app.todoist.com/
+    target: newtab
+  - title: Notion
+    description: Notes
+    icon: hl-notion
+    url: https://notion.so/
+    target: newtab
+  - title: ChatGPT
+    description: Chat GPT
+    icon: hl-chatgpt
+    url: https://chatgpt.com
+    target: newtab
+  - title: OneDrive
+    description: File Storage
+    icon: hl-microsoft
+    url: https://onedrive.live.com/?id=root&cid=4ECE5434F5DFF502
+    target: newtab
+  - title: iCloud
+    description: Apple iCloud
+    icon: hl-apple
+    url: https://www.icloud.com/photos/
+    target: newtab
+  - title: Gmail
+    description: Google Mail
+    icon: hl-gmail
+    url: https://mail.google.com/
+    target: newtab
+  - title: Google Calendar
+    description: Google Calendar
+    icon: hl-google-calendar
+    url: https://calendar.google.com
+    target: newtab
+  
