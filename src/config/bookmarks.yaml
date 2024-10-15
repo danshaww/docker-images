@@ -57,7 +57,7 @@
           description: Reverse Proxy
           icon: traefik.png
 
-- Services:
+- Self Hosted Services:
     - BookStack:
         - abbr: 
           href: https://docs.prod.epichouse.co.uk/
