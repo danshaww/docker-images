@@ -33,7 +33,7 @@ groupsInitiallyCollapsed: true
 useEqualHeights: true
 #disableCollapse: true
 theme: dark
-color: black
+color: neutral
 #
 #providers:
 #  openweathermap: openweathermapapikey
