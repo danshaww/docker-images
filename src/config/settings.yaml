@@ -31,6 +31,12 @@ layout:
   Services:
     style: row
     columns: 3
+  Third Party Services and Tools:
+    style: row
+    columns: 3
+  Productivity Tools:
+    style: row
+    columns: 3
 groupsInitiallyCollapsed: true
 useEqualHeights: true
 #disableCollapse: true
