@@ -23,16 +23,19 @@ quicklaunch:
 
 layout:
   Manchester Infrastructure:
-    style: row
-    columns: 2
+    tab: Infrastructure
+    style: column
   London Infrastructure:
-    style: row
-    columns: 2
+    tab: First
+    style: column
   Self Hosted Services:
+    tab: Services
     style: column
   Third Party Services and Tools:
+    tab: Services
     style: column
   Productivity Tools:
+    tab: Services
     style: column
 #groupsInitiallyCollapsed: true
 useEqualHeights: true
