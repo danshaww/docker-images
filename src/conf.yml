@@ -8,6 +8,8 @@ pageInfo:
 appConfig:
   theme: colorful
   webSearch: { disableWebSearch: true }
+  #disableConfiguration: true
+  hideSettings: true
 # Main content - An array of sections, each containing an array of items
 sections:
 - name: Productivity
