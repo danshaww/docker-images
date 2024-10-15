@@ -5,7 +5,7 @@ on:
     paths-ignore:
       - '**/README.md'
 jobs:
-  dev-build:
+  dev:
     runs-on: act2
     if: github.ref == 'refs/heads/dev'
     steps:
@@ -21,14 +21,10 @@ jobs:
         run: docker tag danshaw509/epichouse.homepage:${{ gitea.sha }} danshaw509/epichouse.homepage:development
       - name: Push Docker Image with Development Tag
         run: docker push danshaw509/epichouse.homepage:development
-  dev-deploy:
-    runs-on: act2
-    if: github.ref == 'refs/heads/dev'
-    steps:
-      - name: Pull Latest Development Image on vm-app-test-01
+      - name: Deploy Image
         run: ssh  -o "StrictHostKeyChecking no" dan@vm-app-test-01 "cd /srv/docker/apps/epichouse-homepage && docker compose down && docker compose pull && docker compose up -d"
 
-  prod-build:
+  prod:
     runs-on: act2
     if: github.ref == 'refs/heads/main'
     steps:
@@ -44,9 +40,5 @@ jobs:
         run: docker tag danshaw509/epichouse.homepage:${{ gitea.sha }} danshaw509/epichouse.homepage:latest
       - name: Push Docker Image with Production Tag
         run: docker push danshaw509/epichouse.homepage:latest
-  prod-deploy:
-    runs-on: act2
-    if: github.ref == 'refs/heads/main'
-    steps:
-      - name: Pull Latest Image on vm-app-prod-01
+      - name: Deploy Image
         run: ssh  -o "StrictHostKeyChecking no" dan@vm-app-prod-01 "cd /srv/docker/apps/epichouse-homepage && docker compose down && docker compose pull && docker compose up -d"
