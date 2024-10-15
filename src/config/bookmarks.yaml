@@ -45,7 +45,6 @@
           href: https://uptimekuma.prod.epichouse.co.uk/
           description: Primary Monitoring Server
           icon: uptime-kuma.png
-
     - Traefik (Production):
         - abbr: 
           href: https://traefik.prod.epichouse.co.uk/
@@ -56,6 +55,11 @@
           href: https://traefik.test.epichouse.co.uk/
           description: Reverse Proxy
           icon: traefik.png
+    - Bind DNS:
+        - abbr:
+          href: https://gitea.prod.epichouse.co.uk/dan/serverconfiguration/src/branch/main/roles/dns-servers/
+          description: Deployed via Ansible vm-dns-prod-01
+          icon: ubuntu.png
 
 - Self Hosted Services:
     - BookStack:
