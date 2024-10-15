@@ -22,12 +22,12 @@ quicklaunch:
 
 
 layout:
-  HomeLab Infrastructure:
-    style: row
-    columns: 4
-  Self Hosted Services:
-    style: row
-    columns: 4
+  Manchester Infrastructure:
+    style: column
+  London Infrastructure:
+    style: column
+  Services:
+    style: column
 
 useEqualHeights: true
 disableCollapse: true
