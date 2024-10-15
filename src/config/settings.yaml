@@ -2,12 +2,12 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/latest/configs/settings
 
-title: Epichouse Homelab
-background: 
-  image: /images/background.jpg
-  blur: sm
-  brightness: 10
-  opacity: 40
+title: Homepage
+#background: 
+#  image: /images/background.jpg
+#  blur: sm
+#  brightness: 10
+#  opacity: 40
 #  saturate: 50
 
 headerStyle: clean
@@ -23,20 +23,15 @@ quicklaunch:
 
 layout:
   Self Hosted Services:
-    tab: Services
     style: column
   Third Party Services and Tools:
-    tab: Services
     style: column
   Productivity Tools:
-    tab: Services
     style: column
   Manchester Infrastructure:
-    tab: Infrastructure
-    style: column
+    style: row
   London Infrastructure:
-    tab: Infrastructure
-    style: column
+    style: row
 #groupsInitiallyCollapsed: true
 useEqualHeights: true
 disableCollapse: true
