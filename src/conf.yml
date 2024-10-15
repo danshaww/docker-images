@@ -48,6 +48,7 @@ sections:
     icon: hl-google-calendar
     url: https://calendar.google.com
     target: newtab
+
 - name: Entertainment
   icon: fas fa-rocket
   items:
@@ -55,4 +56,14 @@ sections:
     description: Youtube
     icon: hl-youtube
     url: https://youtube.com/
+    target: newtab
+  - title: Netflix
+    description: Netflix
+    icon: hl-netflix
+    url: https://netflix.com/
+    target: newtab
+  - title: Plex
+    description: Plex
+    icon: hl-plex
+    url: https://plex.prod.epichouse.co.uk/
     target: newtab
