@@ -56,9 +56,9 @@
           description: Reverse Proxy
           icon: traefik.png
     - Bind DNS:
-        - abbr:
+        - abbr: vm-dns-prod-01 (Ansible)
           href: https://gitea.prod.epichouse.co.uk/dan/serverconfiguration/src/branch/main/roles/dns-servers/
-          description: Deployed via Ansible vm-dns-prod-01
+          description: Internal DNS Server
           icon: ubuntu.png
 
 - Self Hosted Services:
