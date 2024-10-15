@@ -7,94 +7,81 @@
         href: https://srv-pve-mcr-prod-01.internal.epichouse.co.uk:8006/
         description: srv-pve-mcr-prod-01
         icon: proxmox.png
-        siteMonitor: https://srv-pve-prod-01.internal.epichouse.co.uk:8006/
     - Proxmox Backup Server:
         href: https://vm-pbs-mcr-prod-01.internal.epichouse.co.uk:8007/
         description: srv-pve-prod-01
         icon: proxmox.png
-        siteMonitor: https://vm-pbs-mcr-prod-01.internal.epichouse.co.uk:8007/
+    - Unifi Controller:
+        href: https://unifi.prod.epichouse.co.uk/
+        description: Unifi Network Management
+        icon: unifi.png
+    - Traefik:
+        href: https://traefik-mcr.prod.epichouse.co.uk/
+        description: Reverse Proxy
+        icon: traefik.png
 
 - London Infrastructure:
     - Proxmox (R340):
         href: https://srv-pve-prod-01.internal.epichouse.co.uk:8006/
         description: srv-pve-prod-01
         icon: proxmox.png
-        siteMonitor: https://srv-pve-prod-01.internal.epichouse.co.uk:8006/
     - TrueNAS Scale (NAS):
         href: https://vm-nas-prod-01.internal.epichouse.co.uk/
         description: vm-nas-prod-01
         icon: truenas.png
-        siteMonitor: https://vm-nas-prod-01.internal.epichouse.co.uk/
     - TrueNAS Scale (R240):
         href: https://srv-backup-prod.internal.epichouse.co.uk/
         description: srv-backup-prod
         icon: truenas.png
-        siteMonitor: https://srv-backup-prod.internal.epichouse.co.uk/
     - Uptime Kuma:
         href: https://uptimekuma.prod.epichouse.co.uk/
         description: Primary Monitoring Server
         icon: uptime-kuma.png
-        siteMonitor: https://uptimekuma.prod.epichouse.co.uk/
-    - Unifi Controller:
-        href: https://unifi.prod.epichouse.co.uk/
-        description: Unifi Network Management
-        icon: unifi.png
-        siteMonitor: https://app-unifi-prod-unifi-1:8443
+
     - Traefik (Production):
         href: https://traefik.prod.epichouse.co.uk/
         description: Reverse Proxy
         icon: traefik.png
-        siteMonitor: http://app-traefik-prod-traefik-1:8080/dashboard/#/
     - Traefik (Test):
         href: https://traefik.test.epichouse.co.uk/
         description: Reverse Proxy
         icon: traefik.png
-        siteMonitor: https://traefik.test.epichouse.co.uk/dashboard/#/
 
 - Self Hosted Services:
     - BookStack:
         href: https://docs.prod.epichouse.co.uk/
         description:  Wiki
         icon: bookstack.png
-        siteMonitor: http://app-docs-prod-docs-web-1/login
     - PassBolt:
         href: https://passbolt.prod.epichouse.co.uk/
         description:  Password Management Tool
         icon: passbolt.png
-        siteMonitor: http://app-passbolt-prod-passbolt-web-1
     - Gitea:
         href: https://gitea.prod.epichouse.co.uk/
         description:  GIT Server
         icon: gitea.png
-        siteMonitor: http://app-gitea-prod-gitea-1:3000
     - Guacamole:
         href: https://rdp.epichouse.co.uk/
         description: Web Based RDP/SSH Client
         icon: guacamole.png
-        siteMonitor: http://app-guacamole-prod-guacamole-1:8080/guacamole/#/
     - Plex:
         href: https://plex.prod.epichouse.co.uk/
         description: Plex Media Server
         icon: plex.png
-        siteMonitor: https://app-plex-prod-plex-1:32400
     - qBittorrent:
         href: https://qbittorrent.prod.epichouse.co.uk/
         description: Torrent Client
         icon: qbittorrent.png
-        siteMonitor: http://app-qbittorrent-prod-qbittorrent-1:8080
     - Files Web Service:
         href: https://files.prod.epichouse.co.uk/
         description: HTTP(S) File Download Web Service
         icon: /images/www.png
-        siteMonitor: http://app-files-prod-files-1/
     - Web File Browser:
         href: https://filebrowser.epichouse.co.uk/
         description: HTTP(S) File Browser
         icon: filebrowser.png
-        siteMonitor: http://app-filebrowser-prod-filebrowser-1/
     - Epichouse Website:
         href: https://epichouse.co.uk/
         description: Public Epichouse Website
         icon: /images/www.png
-        siteMonitor: http://app-nginx-epichouse-prod-nginx-epichouse-web-1/
 
