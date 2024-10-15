@@ -22,12 +22,6 @@ quicklaunch:
 
 
 layout:
-  Manchester Infrastructure:
-    tab: Infrastructure
-    style: column
-  London Infrastructure:
-    tab: First
-    style: column
   Self Hosted Services:
     tab: Services
     style: column
@@ -36,6 +30,12 @@ layout:
     style: column
   Productivity Tools:
     tab: Services
+    style: column
+  Manchester Infrastructure:
+    tab: Infrastructure
+    style: column
+  London Infrastructure:
+    tab: Infrastructure
     style: column
 #groupsInitiallyCollapsed: true
 useEqualHeights: true
