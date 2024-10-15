@@ -48,4 +48,11 @@ sections:
     icon: hl-google-calendar
     url: https://calendar.google.com
     target: newtab
-  
+- name: Entertainment
+  icon: fas fa-rocket
+  items:
+  - title: Youtube
+    description: Youtube
+    icon: hl-youtube
+    url: https://youtube.com/
+    target: newtab
