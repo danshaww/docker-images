@@ -23,16 +23,6 @@
           href: https://traefik-mcr.prod.epichouse.co.uk/
           description: Reverse Proxy
           icon: traefik.png
-    - Bind DNS (Ansible):
-        - abbr: 
-          href: https://gitea.prod.epichouse.co.uk/dan/serverconfiguration/src/branch/main/roles/dns-servers/
-          description: Internal DNS Server
-          icon: ubuntu.png
-    - Docker (Ansible):
-        - abbr: 
-          href: https://gitea.prod.epichouse.co.uk/dan/serverconfiguration/src/branch/main/roles/vm-app-mcr-prod-01/
-          description: Production Manchester Docker Host
-          icon: ubuntu.png
 
 - London Infrastructure:
     - Proxmox:
@@ -65,31 +55,6 @@
           href: https://traefik.test.epichouse.co.uk/
           description: Reverse Proxy
           icon: traefik.png
-    - Bind DNS (Ansible):
-        - abbr: 
-          href: https://gitea.prod.epichouse.co.uk/dan/serverconfiguration/src/branch/main/roles/dns-servers/
-          description: Internal DNS Server
-          icon: ubuntu.png
-    - Docker (Ansible):
-        - abbr: 
-          href: https://gitea.prod.epichouse.co.uk/dan/serverconfiguration/src/branch/main/roles/vm-app-prod-01/
-          description: Production Docker Host
-          icon: ubuntu.png
-    - Docker (Ansible):
-        - abbr: 
-          href: https://gitea.prod.epichouse.co.uk/dan/serverconfiguration/src/branch/main/roles/vm-app-test-01/
-          description: Production Docker Host
-          icon: ubuntu.png
-    - Docker (Ansible):
-        - abbr: 
-          href: https://gitea.prod.epichouse.co.uk/dan/serverconfiguration/src/branch/main/roles/vm-upk-prod-01/
-          description: Uptime Kuma Docker Host
-          icon: ubuntu.png
-    - Docker (Ansible):
-        - abbr: 
-          href: https://gitea.prod.epichouse.co.uk/dan/serverconfiguration/src/branch/main/roles/vm-glg-prod-01/
-          description: Graylog Docker Host
-          icon: ubuntu.png
 
 - Self Hosted Services:
     - BookStack:
