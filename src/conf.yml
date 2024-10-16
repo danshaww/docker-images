@@ -172,7 +172,7 @@ sections:
     url: https://graylog.prod.epichouse.co.uk/
     target: newtab
 
-- name: Homelab Infrastructure (London)
+- name: Infrastructure (London)
   icon: fas fa-flask-vial
   items:
   - title: OPNSense
@@ -191,7 +191,7 @@ sections:
     url: https://srv-pbs-prod-01.internal.epichouse.co.uk:8007/
     target: newtab
 
-- name: Homelab Infrastructure (Manchester)
+- name: Infrastructure (Manchester)
   icon: fas fa-flask-vial
   items:
   - title: Unifi
