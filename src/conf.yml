@@ -8,6 +8,7 @@ pageInfo:
 appConfig:
   theme: Default
   webSearch: { disableWebSearch: true }
+  iconSize: true
   #disableConfiguration: true
   hideSettings: true
 # Main content - An array of sections, each containing an array of items
@@ -27,7 +28,7 @@ sections:
     target: newtab
   - title: ChatGPT
     description: Chat GPT
-    icon: hl-chatgpt
+    icon: favicon
     url: https://chatgpt.com
     target: newtab
   - title: OneDrive
@@ -50,6 +51,7 @@ sections:
     icon: hl-google-calendar
     url: https://calendar.google.com
     target: newtab
+    
 
 - name: Entertainment
   icon: fas fa-tv
@@ -82,6 +84,16 @@ sections:
     description: Azure DevOps
     icon: hl-azure-devops
     url: https://dev.azure.com/EpichouseCloud/DS/_build
+    target: newtab
+  - title: Github
+    description: Github
+    icon: hl-github
+    url: https://github.com
+    target: newtab
+  - title: Dockerhub
+    description: Dockerhub
+    icon: hl-docker
+    url: https://hub.docker.com/
     target: newtab
 
 - name: Homelab Services
@@ -145,7 +157,7 @@ sections:
 - name: Homelab Infrastructure (Manchester)
   icon: fas fa-flask-vial
   items:
-  - title: Unifi Controller
+  - title: Unifi
     description: Network Controller
     icon: hl-unifi
     url: https://unifi.prod.epichouse.co.uk/
