@@ -8,7 +8,7 @@ pageInfo:
 appConfig:
   theme: Default
   webSearch: { disableWebSearch: true }
-  iconSize: true
+ # iconSize: true
   #disableConfiguration: true
   hideSettings: true
 # Main content - An array of sections, each containing an array of items
@@ -120,7 +120,7 @@ sections:
   - title: SMTP2GO
     description: SMTP2GO
     icon: favicon
-    url: https://sendgrid.com/en-us
+    url: https://app.smtp2go.com
     target: newtab
   - title: Cloudflare Dashboard
     description: Cloudflare
@@ -134,7 +134,7 @@ sections:
     target: newtab
 
 - name: Homelab Services
-  icon: fas fa-flask-vial
+  icon: fas fa-flask
   items:
   - title: Gitea
     description: My self hosted git server.
@@ -173,7 +173,7 @@ sections:
     target: newtab
 
 - name: Infrastructure (London)
-  icon: fas fa-flask-vial
+  icon: fas fa-server
   items:
   - title: OPNSense
     description: Rotuer
@@ -192,7 +192,7 @@ sections:
     target: newtab
 
 - name: Infrastructure (Manchester)
-  icon: fas fa-flask-vial
+  icon: fas fa-server
   items:
   - title: Unifi
     description: Network Controller
