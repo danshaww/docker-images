@@ -66,11 +66,23 @@ sections:
     icon: hl-netflix
     url: https://netflix.com/
     target: newtab
+  - title: iPlayer
+    description: iPlayer
+    icon: favicon
+    url: https://www.bbc.co.uk/iplayer
+    target: newtab
+  - title: ITVx
+    description: ITVx
+    icon: favicon
+    url: https://www.itv.com/
+    target: newtab
   - title: Plex
     description: Plex
     icon: hl-plex
     url: https://plex.prod.epichouse.co.uk/
     target: newtab
+
+
 
 - name: Cloud Services
   icon: fas fa-cloud
