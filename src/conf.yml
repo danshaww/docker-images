@@ -6,7 +6,7 @@ pageInfo:
 
 # Optional app settings and configuration
 appConfig:
-  theme: colorful
+  theme: default
   webSearch: { disableWebSearch: true }
   #disableConfiguration: true
   hideSettings: true
