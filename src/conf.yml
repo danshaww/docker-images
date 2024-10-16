@@ -123,16 +123,16 @@ sections:
     url: https://graylog.prod.epichouse.co.uk/
     target: newtab
 
-  - name: Homelab Infrastructure (London)
-    icon: fas fa-flask-vial
-    items:
-    - title: Proxmox
-      description: Primary Virtualisation Server
-      icon: hl-proxmox
-      url: https://srv-pve-prod-01.internal.epichouse.co.uk:8006/
-      target: newtab
-    - title: Proxmox
-      description: Primary Backup Server
-      icon: hl-proxmox
-      url: https://srv-pbs-prod-01.internal.epichouse.co.uk:8007/
-      target: newtab
+- name: Homelab Infrastructure (London)
+  icon: fas fa-flask-vial
+  items:
+  - title: Proxmox
+    description: Primary Virtualisation Server
+    icon: hl-proxmox
+    url: https://srv-pve-prod-01.internal.epichouse.co.uk:8006/
+    target: newtab
+  - title: Proxmox
+    description: Primary Backup Server
+    icon: hl-proxmox
+    url: https://srv-pbs-prod-01.internal.epichouse.co.uk:8007/
+    target: newtab
