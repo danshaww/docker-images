@@ -126,6 +126,11 @@ sections:
 - name: Homelab Infrastructure (London)
   icon: fas fa-flask-vial
   items:
+  - title: OPNSense
+    description: Rotuer
+    icon: hl-opnsense
+    url: https://vm-gw-prod-01.internal.epichouse.co.uk/
+    target: newtab
   - title: Proxmox
     description: Primary Virtualisation Server
     icon: hl-proxmox
@@ -136,3 +141,22 @@ sections:
     icon: hl-proxmox
     url: https://srv-pbs-prod-01.internal.epichouse.co.uk:8007/
     target: newtab
+
+  - name: Homelab Infrastructure (Manchester)
+    icon: fas fa-flask-vial
+    items:
+    - title: Unifi Controller
+      description: Network Controller
+      icon: hl-unifi
+      url: https://unifi.prod.epichouse.co.uk/
+      target: newtab
+    - title: Proxmox
+      description: DR Virtualisation Server
+      icon: hl-proxmox
+      url: https://srv-pve-mcr-prod-01.internal.epichouse.co.uk:8006/
+      target: newtab
+    - title: Proxmox
+      description: DR Backup Server
+      icon: hl-proxmox
+      url: https://vm-pbs-mcr-prod-01.internal.epichouse.co.uk:8007/
+      target: newtab
