@@ -95,6 +95,31 @@ sections:
     icon: hl-docker
     url: https://hub.docker.com/
     target: newtab
+  - title: AWS
+    description: Amazon Web Services
+    icon: hl-aws
+    url: https://eu-west-2.console.aws.amazon.com/console/
+    target: newtab
+  - title: Sendgrid
+    description: Sendgrid
+    icon: favicon
+    url: https://sendgrid.com/en-us
+    target: newtab
+  - title: SMTP2GO
+    description: SMTP2GO
+    icon: favicon
+    url: https://sendgrid.com/en-us
+    target: newtab
+  - title: Cloudflare Dashboard
+    description: Cloudflare
+    icon: hl-cloudflare
+    url: https://dash.cloudflare.com/90d66f15b080eee95b3ea1fae786118e/epichouse.co.uk
+    target: newtab
+  - title: Cloudflare Zero Trust
+    description: Cloudflare
+    icon: hl-cloudflare-zero-trust
+    url: https://one.dash.cloudflare.com/90d66f15b080eee95b3ea1fae786118e/access/apps?search=
+    target: newtab
 
 - name: Homelab Services
   icon: fas fa-flask-vial
