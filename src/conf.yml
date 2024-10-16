@@ -6,7 +6,7 @@ pageInfo:
 
 # Optional app settings and configuration
 appConfig:
-  theme: default
+  theme: Default
   webSearch: { disableWebSearch: true }
   #disableConfiguration: true
   hideSettings: true
@@ -15,7 +15,7 @@ sections:
 - name: Productivity
   icon: fas fa-keyboard
   items:
-  - title: ToDoist
+  - title: Todoist
     description: Task Management
     icon: hl-todoist
     url: https://app.todoist.com/
