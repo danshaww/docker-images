@@ -17,6 +17,7 @@ jobs:
       dockerhub_token: ${{ secrets.dockerhub_token }}
       dockerhub_username: ${{ secrets.dockerhub_username }}
       server_username: ${{ secrets.server_username }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   production:
     if: github.ref == 'refs/heads/main'
     uses: epichouse/workflowtemplates/.github/workflows/docker-build.yaml@main
