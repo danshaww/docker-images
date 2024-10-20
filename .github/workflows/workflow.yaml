@@ -6,8 +6,11 @@ on:
       - '**/README.md'
 jobs:
   development:
+    permissions:
+      contents: read
+      packages: write
     if: github.ref == 'refs/heads/dev'
-    uses: danshaw509/workflowtemplates/.github/workflows/docker-build.yaml@main
+    uses: epichouse/workflowtemplates/.github/workflows/docker-build.yaml@main
     with:
       docker_env: development
       docker_server: ${{ vars.testing_server}}
@@ -18,8 +21,11 @@ jobs:
       dockerhub_username: ${{ secrets.dockerhub_username }}
       server_username: ${{ secrets.server_username }}
   production:
+    permissions:
+      contents: read
+      packages: write
     if: github.ref == 'refs/heads/main'
-    uses: danshaw509/workflowtemplates/.github/workflows/docker-build.yaml@main
+    uses: epichouse/workflowtemplates/.github/workflows/docker-build.yaml@main
     with:
       docker_env: latest
       docker_server: ${{ vars.production_server}}
