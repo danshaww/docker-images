@@ -20,7 +20,6 @@ jobs:
       dockerhub_token: ${{ secrets.dockerhub_token }}
       dockerhub_username: ${{ secrets.dockerhub_username }}
       server_username: ${{ secrets.server_username }}
-      GITHUB_TOKEN1: ${{ secrets.GITHUB_TOKEN }}
   production:
     permissions:
       contents: read
@@ -36,4 +35,3 @@ jobs:
       dockerhub_token: ${{ secrets.dockerhub_token }}
       dockerhub_username: ${{ secrets.dockerhub_username }}
       server_username: ${{ secrets.server_username }}
-      GITHUB_TOKEN1: ${{ secrets.GITHUB_TOKEN }}
