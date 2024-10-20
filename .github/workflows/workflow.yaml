@@ -1,0 +1,17 @@
+name: Docker Workflow
+on:
+  workflow_dispatch:
+  push:
+    paths-ignore:
+      - '**/README.md'
+jobs:
+  build-dev:
+    if: github.ref == 'refs/heads/dev'
+    uses: danshaw509/workflowtemplates/.github/workflows/docker-build.yaml@main
+    with:
+      docker_env: development
+  build-prod:
+    if: github.ref == 'refs/heads/main'
+    uses: danshaw509/workflowtemplates/.github/workflows/docker-build.yaml@main
+    with:
+      docker_env: latest
