@@ -5,13 +5,13 @@ on:
     paths-ignore:
       - '**/README.md'
 jobs:
-  build-dev:
+  development:
     if: github.ref == 'refs/heads/dev'
     uses: danshaw509/workflowtemplates/.github/workflows/docker-build.yaml@main
     with:
       docker_env: development
       docker_token: ${{ github.repository.secrets.DOCKERTOKEN }}
-  build-prod:
+  production:
     if: github.ref == 'refs/heads/main'
     uses: danshaw509/workflowtemplates/.github/workflows/docker-build.yaml@main
     with:
