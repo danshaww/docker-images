@@ -10,9 +10,10 @@ jobs:
     uses: danshaw509/workflowtemplates/.github/workflows/docker-build.yaml@main
     with:
       docker_env: development
+      docker_token: ${{secrets.DOCKERTOKEN}}
   build-prod:
     if: github.ref == 'refs/heads/main'
     uses: danshaw509/workflowtemplates/.github/workflows/docker-build.yaml@main
     with:
       docker_env: latest
-      
+      docker_token: ${{secrets.DOCKERTOKEN}}
