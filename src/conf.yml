@@ -180,12 +180,12 @@ sections:
     icon: hl-opnsense
     url: https://vm-gw-prod-01.internal.epichouse.co.uk/
     target: newtab
-  - title: Proxmox
+  - title: PVE
     description: Primary Virtualisation Server
     icon: hl-proxmox
     url: https://srv-pve-prod-01.internal.epichouse.co.uk:8006/
     target: newtab
-  - title: Proxmox
+  - title: PBS
     description: Primary Backup Server
     icon: hl-proxmox
     url: https://srv-pbs-prod-01.internal.epichouse.co.uk:8007/
@@ -199,12 +199,12 @@ sections:
     icon: hl-unifi
     url: https://unifi.prod.epichouse.co.uk/
     target: newtab
-  - title: Proxmox
+  - title: PVE
     description: DR Virtualisation Server
     icon: hl-proxmox
     url: https://srv-pve-mcr-prod-01.internal.epichouse.co.uk:8006/
     target: newtab
-  - title: Proxmox
+  - title: PBS
     description: DR Backup Server
     icon: hl-proxmox
     url: https://vm-pbs-mcr-prod-01.internal.epichouse.co.uk:8007/

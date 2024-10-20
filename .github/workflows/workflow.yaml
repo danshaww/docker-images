@@ -1,0 +1,23 @@
+name: Docker Workflow
+on:
+  workflow_dispatch:
+  push:
+    paths-ignore:
+      - '**/README.md'
+jobs:
+  development:
+    if: github.ref == 'refs/heads/dev'
+    uses: danshaw509/workflowtemplates/.github/workflows/docker-build.yaml@main
+    with:
+      docker_env: development
+    secrets:
+      DOCKERTOKEN: ${{ github.repository.secrets.DOCKERTOKEN }}
+  production:
+    if: github.ref == 'refs/heads/main'
+    uses: danshaw509/workflowtemplates/.github/workflows/docker-build.yaml@main
+    with:
+      docker_env: latest
+    secrets:
+      DOCKERTOKEN: ${{ github.repository.secrets.DOCKERTOKEN }}
+
+      
