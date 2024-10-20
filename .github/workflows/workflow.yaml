@@ -10,14 +10,22 @@ jobs:
     uses: danshaw509/workflowtemplates/.github/workflows/docker-build.yaml@main
     with:
       docker_env: development
+      docker_server: ${{ vars.testing_server}}
+      docker_image: ${{ vars.docker_image}}
+      docker_path: ${{ vars.docker_path}}
     secrets:
-      DOCKERTOKEN: ${{ github.repository.secrets.DOCKERTOKEN }}
+      dockerhub_token: ${{ secrets.dockerhub_token }}
+      dockerhub_username: ${{ secrets.dockerhub_username }}
+      server_username: ${{ secrets.server_username }}
   production:
     if: github.ref == 'refs/heads/main'
     uses: danshaw509/workflowtemplates/.github/workflows/docker-build.yaml@main
     with:
       docker_env: latest
+      docker_server: ${{ vars.production_server}}
+      docker_image: ${{ vars.docker_image}}
+      docker_path: ${{ vars.docker_path}}
     secrets:
-      DOCKERTOKEN: ${{ github.repository.secrets.DOCKERTOKEN }}
-
-      
+      dockerhub_token: ${{ secrets.dockerhub_token }}
+      dockerhub_username: ${{ secrets.dockerhub_username }}
+      server_username: ${{ secrets.server_username }}
