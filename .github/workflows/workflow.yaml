@@ -11,11 +11,11 @@ jobs:
     with:
       docker_env: development
     secrets:
-      docker_token: ${{ github.repository.secrets.DOCKERTOKEN }}
+      DOCKERTOKEN: ${{ github.repository.secrets.DOCKERTOKEN }}
   production:
     if: github.ref == 'refs/heads/main'
     uses: danshaw509/workflowtemplates/.github/workflows/docker-build.yaml@main
     with:
       docker_env: latest
     secrets:
-      docker_token: ${{ github.repository.secrets.DOCKERTOKEN }}
+      DOCKERTOKEN: ${{ github.repository.secrets.DOCKERTOKEN }}
