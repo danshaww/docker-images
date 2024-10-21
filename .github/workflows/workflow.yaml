@@ -9,7 +9,6 @@ jobs:
     permissions:
       contents: read
       packages: write
-    if: github.ref == 'refs/heads/dev'
     uses: epichouse/workflowtemplates/.github/workflows/docker-build.yaml@main
     with:
       docker_env: development
