@@ -13,7 +13,6 @@ jobs:
     with:
       docker_env: development
       docker_server: ${{ vars.testing_server}}
-      docker_image: ${{ vars.docker_image}}
       docker_path: ${{ vars.docker_path}}
     secrets:
       server_username: ${{ secrets.server_username }}
@@ -27,7 +26,6 @@ jobs:
     with:
       docker_env: latest
       docker_server: ${{ vars.production_server}}
-      docker_image: ${{ vars.docker_image}}
       docker_path: ${{ vars.docker_path}}
     secrets:
       server_username: ${{ secrets.server_username }}
