@@ -18,6 +18,7 @@ jobs:
     secrets:
       server_username: ${{ secrets.server_username }}
   production:
+    needs: development
     permissions:
       contents: read
       packages: write
