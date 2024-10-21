@@ -17,8 +17,6 @@ jobs:
       docker_image: ${{ vars.docker_image}}
       docker_path: ${{ vars.docker_path}}
     secrets:
-      dockerhub_token: ${{ secrets.dockerhub_token }}
-      dockerhub_username: ${{ secrets.dockerhub_username }}
       server_username: ${{ secrets.server_username }}
   production:
     permissions:
@@ -32,6 +30,4 @@ jobs:
       docker_image: ${{ vars.docker_image}}
       docker_path: ${{ vars.docker_path}}
     secrets:
-      dockerhub_token: ${{ secrets.dockerhub_token }}
-      dockerhub_username: ${{ secrets.dockerhub_username }}
       server_username: ${{ secrets.server_username }}
