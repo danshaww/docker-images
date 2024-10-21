@@ -2,33 +2,36 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/latest/configs/settings
 
-title: Epichouse Homelab
-background: 
-  image: /images/background.jpg
-  blur: sm
-  brightness: 10
-  opacity: 40
+title: Homepage
+#background: 
+#  image: /images/background.jpg
+#  blur: sm
+#  brightness: 10
+#  opacity: 40
 #  saturate: 50
 
-headerStyle: clean
+headerStyle: boxed
 
 quicklaunch:
   searchDescriptions: true
-  hideInternetSearch: true
+#  hideInternetSearch: true
   showSearchSuggestions: true
-  hideVisitURL: true
+#  hideVisitURL: true
 
 
 
 
 layout:
-  HomeLab Infrastructure:
-    style: row
-    columns: 4
   Self Hosted Services:
-    style: row
-    columns: 4
+    style: column
+  Third Party Services and Tools:
+    style: column
+  London Infrastructure:
+    style: column
+  Manchester Infrastructure:
+    style: column
 
+#groupsInitiallyCollapsed: true
 useEqualHeights: true
 disableCollapse: true
 theme: dark

@@ -1,0 +1,31 @@
+name: Docker Workflow
+on:
+  workflow_dispatch:
+  push:
+    paths-ignore:
+      - '**/README.md'
+jobs:
+  development:
+    permissions:
+      contents: read
+      packages: write
+    uses: epichouse/workflowtemplates/.github/workflows/docker-build.yaml@main
+    with:
+      docker_env: development
+      docker_server: ${{ vars.testing_server}}
+      docker_path: ${{ vars.docker_path}}
+    secrets:
+      server_username: ${{ secrets.server_username }}
+  production:
+    needs: development
+    permissions:
+      contents: read
+      packages: write
+    if: github.ref == 'refs/heads/main'
+    uses: epichouse/workflowtemplates/.github/workflows/docker-build.yaml@main
+    with:
+      docker_env: latest
+      docker_server: ${{ vars.production_server}}
+      docker_path: ${{ vars.docker_path}}
+    secrets:
+      server_username: ${{ secrets.server_username }}
