@@ -1,4 +1,4 @@
-name: Docker Workflow
+name: Docker - Homepage Build & Deploy
 on:
   workflow_dispatch:
   push:
