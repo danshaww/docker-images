@@ -1,4 +1,4 @@
-name: Docker Workflow
+name: Docker - Dashy Build & Deploy
 on:
   workflow_dispatch:
   push:
