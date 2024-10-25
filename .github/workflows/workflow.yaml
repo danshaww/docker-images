@@ -1,9 +1,9 @@
 name: Docker Workflow
 on:
   workflow_dispatch:
-  push:
-    paths-ignore:
-      - '**/README.md'
+#  push:
+#    paths-ignore:
+#      - '**/README.md'
 jobs:
   development:
     permissions:
