@@ -9,7 +9,7 @@ jobs:
     permissions:
       contents: read
       packages: write
-    uses: epichouse/workflowtemplates/.github/workflows/docker-build.yaml@main
+    uses: epichouse/workflow-templates/.github/workflows/docker-build.yaml@main
     with:
       docker_env: development
       docker_server: ${{ vars.testing_server}}
