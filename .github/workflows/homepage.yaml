@@ -9,7 +9,7 @@ jobs:
     permissions:
       contents: read
       packages: write
-    uses: epichouse/workflowtemplates/.github/workflows/docker-build.yaml@main
+    uses: epichouse/workflow-templates/.github/workflows/docker-build.yaml@main
     with:
       docker_env: development
       docker_server: ${{ vars.testing_server}}
@@ -23,7 +23,7 @@ jobs:
       contents: read
       packages: write
     if: github.ref == 'refs/heads/main'
-    uses: epichouse/workflowtemplates/.github/workflows/docker-build.yaml@main
+    uses: epichouse/workflow-templates/.github/workflows/docker-build.yaml@main
     with:
       docker_env: latest
       docker_server: ${{ vars.production_server}}
