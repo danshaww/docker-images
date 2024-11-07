@@ -4,8 +4,6 @@ on:
   push:
     paths:
       - dashy/**
-    paths-ignore:
-      - '**/README.md'
 jobs:
   development:
     permissions:
