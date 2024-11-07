@@ -2,6 +2,8 @@ name: Docker - hello-world Build & Deploy
 on:
   workflow_dispatch:
   push:
+    paths:
+      - hello-world/**
     paths-ignore:
       - '**/README.md'
 jobs:

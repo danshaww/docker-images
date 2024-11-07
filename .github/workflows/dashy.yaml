@@ -2,6 +2,8 @@ name: Docker - Dashy Build & Deploy
 on:
   workflow_dispatch:
   push:
+    paths:
+      - dashy/**
     paths-ignore:
       - '**/README.md'
 jobs:
