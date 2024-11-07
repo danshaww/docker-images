@@ -1,9 +1,9 @@
-name: Docker - Homepage Build & Deploy
+name: Docker - hello-world Build & Deploy
 on:
   workflow_dispatch:
   push:
     paths:
-      - homepage/**
+      - hello-world/**
 jobs:
   development:
     permissions:
@@ -14,7 +14,7 @@ jobs:
       docker_env: development
       docker_server: ${{ vars.testing_server}}
       docker_path: ${{ vars.docker_path}}
-      docker_project: "homepage"
+      docker_project: "hello-world"
     secrets:
       server_username: ${{ secrets.server_username }}
   production:
@@ -28,6 +28,6 @@ jobs:
       docker_env: latest
       docker_server: ${{ vars.production_server}}
       docker_path: ${{ vars.docker_path}}
-      docker_project: "homepage"
+      docker_project: "hello-world"
     secrets:
       server_username: ${{ secrets.server_username }}
