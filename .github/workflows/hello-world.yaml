@@ -11,7 +11,6 @@ jobs:
       packages: write
     uses: epichouse/workflow-templates/.github/workflows/docker-build.yaml@main
     with:
-      skip_deploy: true
       docker_env: development
       docker_server: ${{ vars.testing_server}}
       docker_path: ${{ vars.docker_path}}
@@ -26,7 +25,6 @@ jobs:
     if: github.ref == 'refs/heads/main'
     uses: epichouse/workflow-templates/.github/workflows/docker-build.yaml@main
     with:
-      skip_deploy: true
       docker_env: latest
       docker_server: ${{ vars.production_server}}
       docker_path: ${{ vars.docker_path}}
